@@ -1,0 +1,120 @@
+body {
+    font-family: "Robotic", Arial, sans-serif;
+    /* Вместо "Новый_шрифт" укажите название нового шрифта, который вы хотите использовать. */
+    /* Затем идут альтернативные шрифты, которые будут использованы, если первый недоступен. */
+}
+#main{
+    position: absolute;
+    left: 50%;
+    right: 0px;
+    width: 40vw;
+    height: 90vh;
+    background: rgba(37, 48, 88, 0.859);
+    transform: translate(-50%, 0%);
+    border-radius: 3px;
+
+}
+#expanded{
+    position: absolute;
+    left: 15vw;
+    top: 22vh;
+    width: 28.5vw;
+    height: 68vh;
+    background: rgba(37, 48, 88, 0.859);
+    transform: translate(-50%, 0%);
+    border-radius: 3px;
+    display: flex;
+    flex-direction: column;
+    padding-left: 0.5vw; 
+    padding-top: 1vh;
+}
+#header{
+    display: flex;
+    justify-content: space-between;    
+    margin-left: 1vw;
+    margin-top: 2vh;
+    width: 38vw;
+    height: 18vh;
+    position: relative;
+}
+#answer-box{
+    background: rgba(104, 138, 119, 0.807);
+    width: 29vw;
+    height: 18vh;
+    left: 0vw;
+    position: absolute;
+    border-radius: 4px;
+}
+#answer-box > p{
+    text-decoration-style: solid;  
+    padding-bottom: 20px; 
+    font-size: 400%;
+    color: rgb(255, 255, 255);
+    position: absolute;
+    top: -4vh;
+    margin-left: 1vw;
+}
+#clear{
+    background: rgb(54, 151, 99);
+    width: 9vw;
+    height: 18vh;
+    text-align: center;
+    margin-left: 29vw;
+    position: relative;
+    border-radius: 4px;
+}
+#clear > p{
+    text-decoration-style: solid;
+    font-size: 300%;
+    color: rgb(255, 255, 255);
+    position: absolute;
+    left: 50%;
+    top: 15%;
+    transform: translate(-50%, -50%);
+}
+#buttons{
+    display: flex;
+    flex-direction: column;    
+    margin-left: 1vw;
+    margin-top: 1vh;
+    width: 38vw;
+    height: 65vh;
+}
+.row{
+    display: flex;
+    flex-direction: row;    
+    justify-content: space-between;
+    margin-top: 1vh;
+    width: 38vw;
+    height: 16vh;
+}
+.row_ex{
+    display: flex;
+    flex-direction: row;    
+    justify-content: space-between;
+    margin-bottom: 1vh;
+    width: 28vw;
+    height: 16vh;
+}
+.button{
+    background: rgb(172, 172, 172);
+    width: 9vw;
+    height: 16vh;
+    position: relative;
+    border-radius: 3px;
+}
+.button:active {
+    background-color: rgb(128, 128, 128);
+}
+.button > p{
+    text-decoration-style: solid;
+    font-size: 300%;
+    color: rgb(48, 48, 48);
+    position: absolute;
+    left: 50%;
+    top: 15%;
+    transform: translate(-50%, -50%);
+}
+#eq{
+    background: rgb(199, 81, 81);
+}

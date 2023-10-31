@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="main">
+        <div id="header">
+            <div id="answer-box">
+                <p id="answer">0</p>
+            </div>
+            <div id="clear" onclick="clr()">
+                <p>AC</p>
+            </div>
+        </div>
+        <div id="buttons">
+            <div class="row">
+                <div class="button" id="b7" onclick="pushed('7')"><p>7</p></div>
+                <div class="button" id="b8" onclick="pushed('8')"><p>8</p></div>
+                <div class="button" id="b9" onclick="pushed('9')"><p>9</p></div>
+                <div class="button" id="dvs" onclick="pushed('/')"><p>/</p></div>
+            </div>
+            <div class="row">
+                <div class="button" id="b4" onclick="pushed('4')"><p>4</p></div>
+                <div class="button" id="b5" onclick="pushed('5')"><p>5</p></div>
+                <div class="button" id="b6" onclick="pushed('6')"><p>6</p></div>
+                <div class="button" id="mlt" onclick="pushed('*')"><p>*</p></div>
+            </div>
+            <div class="row">
+                <div class="button" id="b1" onclick="pushed('1')"><p>1</p></div>
+                <div class="button" id="b2" onclick="pushed('2')"><p>2</p></div>
+                <div class="button" id="b3" onclick="pushed('3')"><p>3</p></div>
+                <div class="button" id="mns" onclick="pushed('-')"><p>-</p></div>
+            </div>
+            <div class="row">
+                <div class="button" id="cm" onclick="expnd()"><p><></p></div>
+                <div class="button" id="b0" onclick="pushed('0')"><p>0</p></div>
+                <div class="button" id="eq" onclick="cnt()"><p>=</p></div>
+                <div class="button" id="pl" onclick="pushed('+')"><p>+</p></div>
+            </div>
+        </div>
+    </div>
+    <div id="expanded">
+        <div class="row_ex">
+            <div class="button"  onclick="pushed('s1')"><p>(</p></div>
+            <div class="button"  onclick="pushed('s2')"><p>)</p></div>
+            <div class="button"  onclick="pushed('.')"><p>.</p></div>
+        </div>
+        <div class="row_ex">
+            <div class="button" onclick="pushed('**2')"><p>x²</p></div>
+            <div class="button" onclick="pushed('**3')"><p>x³</p></div>
+            <div class="button" onclick="pushed('**0.5')"><p>sqrt</p></div>
+        </div>
+        <div class="row_ex">
+            <div class="button" onclick="absed()"><p>|x|</p></div>
+            <div class="button" onclick="sined()"><p>sin()</p></div>
+            <div class="button" onclick="cosed()"><p>cos()</p></div>
+        </div>
+        <div class="row_ex">
+            <div class="button" onclick="taned()"><p>tan()</p></div>
+            <div class="button" onclick="pushed('Math.PI')"><p>Pi</p></div>
+            <div class="button" id="eq" onclick="delt()"><p>del</p></div>
+        </div>
+    </div>
+    <script src="js.js"></script>
+</body>
+</html>
